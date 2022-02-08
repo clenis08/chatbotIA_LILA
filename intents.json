@@ -1,0 +1,94 @@
+{"intents": [
+    { 
+    "tag": "greeting",
+    "patterns": ["Hi there", "Hello", "Hi", "good day", "good moorning", "How are you", "Is anyone there?","Hey","Hola",  "Good day"],
+    "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?", "What can I do for you?"]
+    },
+    { 
+    "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time", "adios"],
+        "responses": ["See you!", "Have a nice day", "Bye! Come back again soon.", "Be carefull" ]
+    },
+    {"tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {"tag": "noanswer",
+        "patterns": [],
+        "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
+    },
+    {"tag": "options",
+        "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What do you sell"],
+        "responses":["I can guide you through the buy of your electronic products like Arduino, Raspberry, Robotic tools, and 3D printer", 
+                    "Offering support for software development"]
+    },
+    {"tag": "shop",
+        "patterns": ["I would like to buy something", "what are you products?", "what do you recommend", "What are you selling", "i don't no know what to buy" ],
+        "responses": ["Sure give me a short description of what are you searching?"],
+        "context": [""]
+    },
+    {"tag": "hours",
+        "patterns": ["when do you open", "when do you close", "until what time are open?, what time do you close?", "Do  you open on weekends?" ],
+        "responses": ["We work 24/7 for you","Don´t worry we work all day"]
+    },
+    {"tag": "name",
+        "patterns": ["what is your name", "how can i call you", "whats your name?", "what is your nickname", "do you have a name?"],
+        "responses": ["You can callme Lila", "I am Lila", "Please call me Lila"]
+    },
+    {
+    "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+    "tag": "items",
+        "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?"
+        ],
+        "responses": [
+        "We sell electronics devices like arduinos",
+        "We have electronics devices"
+        ]
+    },
+    {
+    "tag": "payments",
+        "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+        ],
+        "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+        ]
+    },
+    {
+    "tag": "delivery",
+        "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?"
+        ],
+        "responses": [
+        "Delivery takes 2-4 days",
+        "Shipping takes 2-4 days"
+        ]
+    },
+    {
+    "tag": "funny",
+        "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+        ],
+        "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+        ]
+    }
+]
+
+}
