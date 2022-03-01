@@ -14,7 +14,7 @@ from tensorflow.keras.optimizers import SGD
 
 lemmatizer = WordNetLemmatizer()
 
-intents = json.loads(open('./intents.json').read()) ## retorna un objeto json del tipo diccionario
+intents = json.loads(open('./resources/intents.json').read()) ## retorna un objeto json del tipo diccionario
 
 words, classes, documents = ([] for i in range (3))
 
@@ -36,8 +36,8 @@ words = sorted(set(words)) ## el metodo set eliminamos las palabras repetidas y 
 classes = sorted(set(classes))
 
 #Guardar la info en archivos
-pickle.dump(words,open('words.pkl','wb'))
-pickle.dump(classes,open('classes.pkl','wb'))
+pickle.dump(words,open('./resources/words.pkl','wb'))
+pickle.dump(classes,open('./resources/classes.pkl','wb'))
 
 ## Inicializamos la lista de training
 training = []
@@ -82,7 +82,7 @@ sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer= sgd, metrics=['accuracy'])
 
 hist= model.fit(np.array(train_x),np.array(train_y),epochs=200,batch_size=5,verbose=1)
-model.save('./chatbot_model.h5', hist)
+model.save('./resources/chatbot_model.h5', hist)
 print("model created")
 
 # print(training)
