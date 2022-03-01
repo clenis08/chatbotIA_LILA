@@ -10,4 +10,5 @@ LILA is an assint for an electronics devices E-COMMERCE.
 * Keras
 * TensorFlow
 * Natural Language Tool Kit 
+* Flask
 
